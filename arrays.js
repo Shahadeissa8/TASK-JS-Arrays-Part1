@@ -2,30 +2,43 @@
 // Write a createGroceries function that returns an array with 6 groceries items
 function createGroceries() {
   // write your code here...
+  let groceries = [
+    "apple",
+    "personalbar",
+    "brush",
+    "soda",
+    "toothpaste",
+    "tomato",
+  ];
+  return groceries;
 }
 
 // Step 2:
 // Write a getSecondGroceryItem function that returns the second grocery item from `groceries` argument
 function getSecondGroceryItem(groceries) {
   // write your code here...
+  return groceries[1];
 }
 
 // Step 3:
 // Write a getGroceriesCount that returns the length of the `groceries` argument
 function getGroceriesCount(groceries) {
   // write your code here...
+  return groceries.length;
 }
 
 // Step 4:
 // Write a getLastGroceryItem function that returns the last grocery item from `groceries` argument
 function getLastGroceryItem(groceries) {
   // write your code here...
+  return groceries[5];
 }
 
 // Step 5:
 // Write a removeLastGroceryItem function that removes the last grocery item and return it
 function removeLastGroceryItem(groceries) {
   // write your code here...
+  return groceries.pop();
 }
 
 // Step 6:
@@ -33,12 +46,16 @@ function removeLastGroceryItem(groceries) {
 // and returns the modified array
 function addNewGroceries(groceries, itemOne, itemTwo) {
   // write your code here...
+  groceries.push(itemOne, itemTwo);
+  return groceries;
 }
 
 // Step 7:
 // Write a getFirstThreeGroceryItems function that returns a new array that contains the first three grocery items
 function getFirstThreeGroceryItems(groceries) {
   // write your code here...
+  let new1 = groceries.slice(0, 3);
+  return new1;
 }
 
 // 🌶️🌶️🌶️ **Challenge**
